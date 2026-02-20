@@ -7,9 +7,9 @@ class DaemonOs < Formula
   license "MIT"
 
   def install
-    bin.install "daemon-os-v3.0.0/daemon"
-    share.install "daemon-os-v3.0.0/DAEMON-MCP.md"
-    (share/"daemon-os/recipes").install Dir["daemon-os-v3.0.0/recipes/*.json"]
+    bin.install "daemon"
+    share.install "DAEMON-MCP.md"
+    (share/"daemon-os/recipes").install Dir["recipes/*.json"]
   end
 
   def post_install
